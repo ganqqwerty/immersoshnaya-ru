@@ -1,11 +1,17 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+# Руководство для новичка
 
-## What is Nextra?
+import Image from 'next/image'
+import beginnerGuide from './beginner-guide.drawio.svg'
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
-
-## Documentation
-
-The documentation is available at [https://nextra.site](https://nextra.site).
+export default function Page() {
+    return (
+        <Image
+            src={beginnerGuide}
+            alt="Picture of the author"
+            // width={500} automatically provided
+            // height={500} automatically provided
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
+        />
+    )
+}
