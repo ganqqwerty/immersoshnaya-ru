@@ -1,15 +1,13 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "Изучение японского через погружение: схема",
   "about": {
-    "title": "About",
+    "title": "Обо мне",
     "type": "page"
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "Telegram-канал Иммерсошная↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://t.me/immersionjp",
     "newWindow": true
   }
 }
