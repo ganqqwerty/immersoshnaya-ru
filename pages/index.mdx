@@ -1,8 +1,17 @@
 # Руководство для новичка
 
 import Image from 'next/image'
-import { ReactComponent as BeginnerGuide} from './beginner-guide.drawio.svg'
+import beginnerGuide from './beginner-guide.drawio.svg'
 
 export default function Page() {
-    return <BeginnerGuide />;
+    return (
+        <Image
+            src={beginnerGuide}
+            alt="Гайд для новичков"
+            // width={500} automatically provided
+            // height={500} automatically provided
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
+        />
+    )
 }
