@@ -1,14 +1,25 @@
 # Руководство-схема для новичков
 
+
 import Image from 'next/image'
 import beginnerGuide from './beginner-guide.drawio.svg'
+import beginnerGuideSmall from './beginner-guide-small.svg'
 
 export default function Page() {
     return (
-        <Image
-            src={beginnerGuide}
-            alt="Гайд для новичков"
-            placeholder="blur" // Optional blur-up while loading
-        />
+        <>
+            <Image
+                src={beginnerGuideSmall}
+                alt="Гайд для новичков маленькая версия"
+                placeholder="blur" // Optional blur-up while loading
+            />
+            <h3>И вот полная версия</h3>
+            <Image
+                src={beginnerGuide}
+                alt="Гайд для новичков"
+                placeholder="blur" // Optional blur-up while loading
+            />
+
+        </>
     )
 }
